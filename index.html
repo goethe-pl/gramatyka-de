@@ -19,12 +19,22 @@
     </script>
 
     <script>
+
+        var article = new jloads({
+            jloads: new Load({
+                target: "article",
+                replace: 1
+            }),
+        });
+
+
         jl.target({
             "head": [
                 "css/fade-in.css",
                 "css/index.css",
-                "js/github.js",
+                "js/clipboard.js",
                 "table/form.css?3",
+                "table/form.js?1"
             ],
             "footer": [
                 "html/footer.html?3",
@@ -37,28 +47,50 @@
         // load sentence from param url, ?*
         var params = window.location.search.slice(1)
             .split('&')
-            .reduce(function _reduce (/*Object*/ a, /*String*/ b) {
+            .reduce(function _reduce(/*Object*/ a, /*String*/ b) {
                 b = b.split('=');
                 a[b[0]] = decodeURIComponent(b[1]);
                 return a;
             }, {});
         var sentence = Object.keys(params)[0];
         sentence = decodeURI(sentence);
-        if(sentence.length < 2){
-            jl.target({
-                "article": [
-                    "table/form.html?2",
-                    "table/form.js?2"
-                ]
-            });
+
+        if (sentence.length < 2) {
+            lastSentence();
         } else {
-            jl.target({
+            editSentence();
+        }
+
+        function editSentence() {
+            article.target({
                 "article": [
                     // "table/blank.html",
                     "table/index.html?1",
-                    "table/form.js?1"
+                    // "table/form.js?1"
                 ]
             });
+        }
+
+        function lastSentence() {
+            article.target({
+                "article": [
+                    "table/form.html?2",
+                    // "table/form.js?2"
+                ]
+            });
+        }
+
+        function shareSentence() {
+            article.target({
+                "article": [
+                    "table/share.html?2",
+                    // "table/form.js?2"
+
+                ]
+            });
+        }
+        function copySentence() {
+            CopyToClipboardFromInputElement(document.getElementById("text"));
         }
 
     </script>
