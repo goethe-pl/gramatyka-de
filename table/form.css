@@ -16,7 +16,7 @@ table .translated td {
     /*width: 300px;*/
 }
 table .partname td {
-    /*background-color: #838b8e;*/
+    background-color: #6eac96;
     color: #fff;
     /*margin: auto auto;*/
     text-align: center;
@@ -70,7 +70,7 @@ table td.space {
 }
 
 .sentence_input #text {
-    width: 50%;
+    width: 87%;
     color: black;
 }
 .sentence_input #clear {

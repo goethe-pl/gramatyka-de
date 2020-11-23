@@ -1,75 +1,80 @@
 <div class="sentence_input">
-    <input type="text" id="text" value="">
-    <input type="button" id="clear" value="Clear">
     <input type="button" id="last" value="Last">
     <input type="button" id="copy" value="Copy">
     <input type="button" id="share" value="Share">
 </div>
-<table>
 
+<div class="sentence_input">
+    <input type="text" id="text" value="">
+    <input type="button" id="clear" value="Clear">
+</div>
+
+<table>
     <tr class="sentence">
-        <td></td>
-        <td class="space"></td>
         <td class="first">Ich</td>
         <td>gehe</td>
         <td>zu</td>
         <td>Hause</td>
+        <td class="space"></td>
+        <td></td>
     </tr>
 
     <tr class="translated">
+        <td>Ja</td>
+        <td>idę</td>
+        <td>do</td>
+        <td>domu</td>
+        <td class="space"></td>
         <td>Translate to
             <select name="translated1" id="translated1">
                 <option value="Polish">Polish</option>
                 <option value="Russian">Russian</option>
             </select>
         </td>
-        <td class="space"></td>
-        <td class="first">Ja</td>
-        <td>idę</td>
-        <td>do</td>
-        <td>domu</td>
+
     </tr>
     <tr class="translated">
+
+        <td>я</td>
+        <td>иду</td>
+        <td></td>
+        <td>домой</td>
+        <td class="space"></td>
         <td>Translate to
             <select name="translated2" id="translated2">
                 <option value="Russian">Russian</option>
             </select>
         </td>
-        <td class="space"></td>
-        <td>я</td>
-        <td>иду</td>
-        <td></td>
-        <td>домой</td>
     </tr>
 
     <tr class="partname">
-        <td>Partname in German</td>
-        <td class="space"></td>
+
         <td>pronomen</td>
         <td>verb</td>
         <td>przyimek</td>
         <td>Objekt</td>
+        <td class="space"></td>
+        <td>Partname in German</td>
     </tr>
 
     <tr class="partname">
-        <td>Partname in
-            <select name="translated3" id="translated3">
-                <option value="Polish">Polish</option>
-<!--                <option value="German">German</option>-->
-                <option value="Russian">Russian</option>
-            </select>
-        </td>
-        <td class="space"></td>
         <td>Zaimek osobowy</td>
         <td>czasownik</td>
         <td>przyimek</td>
         <td>rzeczownik</td>
+        <td class="space"></td>
+        <td>Partname in
+            <select name="translated3" id="translated3">
+                <option value="Polish">Polish</option>
+                <!--                <option value="German">German</option>-->
+                <option value="Russian">Russian</option>
+            </select>
+        </td>
     </tr>
 
 
     <tr class="format">
-        <td>Form</td>
-        <td class="space"></td>
+
         <td></td>
         <td class="first_second">
             <h3>Odmiana VERB:</h3>
@@ -92,11 +97,12 @@
         </td>
         <td></td>
         <td></td>
+        <td class="space"></td>
+        <td>Another Form</td>
     </tr>
 
     <tr class="timeform">
-        <td>Time</td>
-        <td class="space"></td>
+
         <td colspan="4" class="whole">
             <b>...</b>
             <button class="active">Ich gehe zu Hause</button>
@@ -107,11 +113,12 @@
             <b>Perfekt:</b>
             <button>Ich bin zu Hause gegangen.</button>
         </td>
+        <td class="space"></td>
+        <td>Time</td>
     </tr>
 
     <tr class="another">
-        <td>Another</td>
-        <td class="space"></td>
+
         <td class="formatted first">
             <button class="active">Ich</button>
             <br>
@@ -127,14 +134,15 @@
             <br>
 
             <button>Sie</button>
-
         </td>
+
         <td>
             <button>laufe</button>
             <br>
             <button>fahre</button>
             <br>
         </td>
+
         <td>
             <button>...</button>
             <br>
@@ -146,11 +154,12 @@
             Schulen PL
             ...
         </td>
+        <td class="space"></td>
+        <td>Another Word</td>
     </tr>
 
     <tr class="help">
-        <td>Help</td>
-        <td class="space"></td>
+
         <td>Geographical means places that have names; eg. France, Berlin, Paris, County, etc.
 
             Nach = To (Geographical, Compass direction) Ex. Wir gehen nach Brazil (We go to Brazil). Ex2. Wir gehen nach
@@ -166,6 +175,8 @@
         <td></td>
         <td></td>
         <td></td>
+        <td class="space"></td>
+        <td>Help</td>
     </tr>
 
 </table>
