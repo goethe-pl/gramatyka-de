@@ -24,17 +24,47 @@
                 "css/fade-in.css",
                 "css/index.css",
                 "js/github.js",
-            ],
-            "article": [
-                "table/form.html",
                 "table/form.css",
-                "table/form.js"
             ],
+            // "article": [
+            //     "table/index.html",
+            // ],
             "footer": [
                 "html/footer.html",
                 "js/domain.js"
             ]
         });
+    </script>
+
+    <script>
+        // load sentence from param url, ?*
+        var params = window.location.search.slice(1)
+            .split('&')
+            .reduce(function _reduce (/*Object*/ a, /*String*/ b) {
+                b = b.split('=');
+                a[b[0]] = decodeURIComponent(b[1]);
+                return a;
+            }, {});
+        var sentence = Object.keys(params)[0];
+        sentence = decodeURI(sentence);
+        if(sentence.length < 2){
+            // sentence = "Ich gehe zu Hause";
+            jl.target({
+                "article": [
+                    "table/form.html",
+                    "table/form.js"
+                ]
+            });
+        } else {
+            jl.target({
+                "article": [
+                    // "table/blank.html",
+                    "table/index.html",
+                    "table/form.js"
+                ]
+            });
+        }
+
     </script>
 
 </head>
@@ -44,6 +74,7 @@
 
 <header class="page-header">
     <div class="page-header__inner">
+        <div id="article"></div>
         <article></article>
     </div>
 </header>

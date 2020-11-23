@@ -1,20 +1,6 @@
 // inputs = Array.from(document.querySelectorAll('button'));
 setTimeout(function () {
     // load depnds part of sentence to correct part, replace it
-
-    // load sentence from param url, ?*
-    var params = window.location.search.slice(1)
-        .split('&')
-        .reduce(function _reduce (/*Object*/ a, /*String*/ b) {
-            b = b.split('=');
-            a[b[0]] = decodeURIComponent(b[1]);
-            return a;
-        }, {});
-    var sentence = Object.keys(params)[0];
-    sentence = decodeURI(sentence);
-    if(sentence.length < 2){
-        sentence = "Ich gehe zu Hause";
-    }
     console.log(sentence, params);
     document.getElementById('text').value = sentence;
 
