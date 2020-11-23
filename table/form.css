@@ -1,6 +1,6 @@
 
 table .sentence td {
-    background-color: #838b8e;
+    /*background-color: #838b8e;*/
     color: #fff;
     /*margin: auto auto;*/
     text-align: center;
@@ -33,8 +33,15 @@ table .format td {
 
     /*width: 300px;*/
 }
-table .help td {
-    background-color: #437e36;
+table .help_sentence td {
+    background-color: #1c432b;
+    color: #fff;
+    font-size: small;
+    /*width: 300px;*/
+
+}
+table .help_part td {
+    background-color: #191d18;
     color: #fff;
     font-size: small;
     /*width: 300px;*/
@@ -92,4 +99,8 @@ table td.space {
     font-style: normal;
     font-weight: 700;
     background-color: yellow;
+}
+
+button {
+    font-size: large;
 }
