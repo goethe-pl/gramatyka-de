@@ -51,7 +51,7 @@ table {
     /*width: 1100px;*/
 }
 table tr td {
-    /*width: 200px;*/
+    /*width: 20%;*/
 }
 table td.space {
     width: 10px;
@@ -60,26 +60,26 @@ table td.space {
 .formatted {
     font-style: italic;
 }
-.edit .sentence_input {
+.sentence_input {
     font-size: larger;
     width: 100%;
-    text-align: right;
+    text-align: left;
 }
-.edit .sentence_input input{
+.sentence_input input{
     font-size: larger;
 }
 
-.edit .sentence_input #text {
-    width: 45%;
+.sentence_input #text {
+    width: 50%;
     color: black;
 }
-.edit .sentence_input #clear {
+.sentence_input #clear {
     color: darkred;
 }
-.edit .sentence_input #last {
+.sentence_input #last {
     color: darkblue;
 }
-.edit .sentence_input #copy {
+.sentence_input #copy {
     color: orange;
 }
 .active {
