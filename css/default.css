@@ -1,0 +1,104 @@
+/* GLOBAL */
+
+
+h1, h2 {
+    font-size: medium;
+}
+
+h3 {
+    font-size: small;
+}
+
+table th {
+    font-weight: bolder;
+}
+
+table td {
+    padding-right: 5px;
+    /*font-weight: normal;*/
+}
+
+/* MODULES  Size */
+
+.jloads.content > div {
+    /*border: 1px solid black;*/
+    /*height: 100px;*/
+    /*margin: 0px;*/
+    /*padding: 4px;*/
+}
+
+#menu, #submenu, article, #search, #breadcrumbs, #tags {
+    display: block;
+    /*padding-top: 50px;*/
+}
+
+#search {
+    /*padding-top: 70px;*/
+}
+
+#tags {
+    padding-top: 2px;
+}
+
+#menu {
+    padding-top: 2px;
+}
+
+#submenu {
+    padding-top: 2px;
+}
+
+article {
+    /*margin-top:290px;*/
+    padding: 15px 15px 25px;
+    font-size: 30px;
+}
+
+#usermenu a {
+    color: white;
+    font-size: medium;
+}
+
+#menu {
+    /*margin: 30px 10px 0 5px;*/
+    /*margin: 0 0 0 5px;*/
+    /*margin-top: 220px;*/
+
+    /*padding: 10px;*/
+    /*padding-top: 50px;*/
+    /*width: 750px;*/
+    /*height: 50px;*/
+}
+
+#menu a {
+    /*color: #fb7e14;*/
+    /*font-size: medium;*/
+}
+
+#submenu div {
+    padding-top: 1px;
+    /*margin: 20px 10px 0 5px;*/
+    /*padding: 2px;*/
+    /*padding-top: 13px;*/
+    /*width: 750px;*/
+}
+
+.block-inline {
+    display: inline-block;
+}
+
+#images {
+    padding: 0px;
+    /*width: 170px;*/
+    height: 40px;
+    max-height: 40px;
+}
+
+footer {
+    line-height: normal;
+}
+
+/*.page.editor textarea {*/
+/*    width: 80%;*/
+/*    height: 600px;*/
+/*}*/

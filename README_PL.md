@@ -1,7 +1,3 @@
-# gramatyka-de
-Nauka Gramatyki Niemieckiej poprzez matrycę
-
-
 ## Cel projektu
 Nauka gramatyki jezyka poprzez przykłady
 
@@ -16,8 +12,7 @@ gramatyka.de?Ich-gehe-zu-Hause
 
 naukaGramatyki.pl?Ich-gehe-zu-Hause
 
-Ich gehe zu Hause
-http://gramatyka.de/index.html?Ich%20gehe%20zu%20Hause
+
 
 
 ## [API Foundation](https://www.apifoundation.com)
