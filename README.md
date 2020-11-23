@@ -32,6 +32,8 @@ Wersja uproszczona
 ![chrome_2020-11-23_21-36-21.png](docs/chrome_2020-11-23_21-36-21.png)
 ### view with 2 pages, simple back, less tables, more ready to chosse options
 ![chrome_2020-11-23_22-23-13.png](docs/chrome_2020-11-23_22-23-13.png)
+### view with 3 pages, share functionality
+![firefox_2020-11-23_23-08-41.png](docs/firefox_2020-11-23_23-08-41.png)
 
 ## [API Foundation](https://www.apifoundation.com)
 
