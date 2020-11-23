@@ -22,6 +22,16 @@ http://gramatyka.de/index.html?Ich%20gehe%20zu%20Hause
 ## TODO:
 Wersja uproszczona
 
+## Changes
+
+### first view
+![chrome_2020-11-23_14-16-03.png](docs/chrome_2020-11-23_14-16-03.png)
+### view with 2 pages, front
+![chrome_2020-11-23_21-35-35.png](docs/chrome_2020-11-23_21-35-35.png)
+### view with 2 pages, back
+![chrome_2020-11-23_21-36-21.png](docs/chrome_2020-11-23_21-36-21.png)
+### view with 2 pages, simple back, less tables, more ready to chosse options
+![chrome_2020-11-23_22-23-13.png](docs/chrome_2020-11-23_22-23-13.png)
 
 ## [API Foundation](https://www.apifoundation.com)
 
