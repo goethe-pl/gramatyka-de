@@ -15,16 +15,6 @@ table .translated td {
     font-size: medium;
     /*width: 300px;*/
 }
-
-table .basic_form td {
-    background-color: #838b8e;
-    color: #fff;
-    /*margin: auto auto;*/
-    text-align: center;
-    font-size: medium;
-    /*width: 300px;*/
-}
-
 table .partname td {
     background-color: #6eac96;
     color: #fff;
@@ -34,7 +24,6 @@ table .partname td {
 
     /*width: 300px;*/
 }
-
 table .format td {
     background-color: #4c4c15;
     color: #fff;
@@ -44,7 +33,6 @@ table .format td {
 
     /*width: 300px;*/
 }
-
 table .help_sentence td {
     background-color: #1c432b;
     color: #fff;
@@ -52,7 +40,6 @@ table .help_sentence td {
     /*width: 300px;*/
 
 }
-
 table .help_part td {
     background-color: #191d18;
     color: #fff;
@@ -70,11 +57,9 @@ table .another td {
 table {
     /*width: 1100px;*/
 }
-
 table tr td {
     /*width: 20%;*/
 }
-
 table td.space {
     width: 10px;
 }
@@ -82,43 +67,33 @@ table td.space {
 .formatted {
     font-style: italic;
 }
-
 .sentence_input {
     font-size: larger;
     width: 100%;
     text-align: left;
 }
-
 .sentence_input.more {
     font-size: medium;
     text-align: left;
 }
 
-.sentence_input.more input{
-    margin: auto 10px auto 10px;
-}
-
-.sentence_input input {
+.sentence_input input{
     font-size: larger;
 }
 
 .sentence_input #text {
-    width: 84%;
+    width: 87%;
     color: black;
 }
-
 .sentence_input #clear {
     color: darkred;
 }
-
 .sentence_input #last {
     color: darkblue;
 }
-
 .sentence_input #copy {
     color: orange;
 }
-
 .active {
     font-family: Lato;
     font-style: normal;

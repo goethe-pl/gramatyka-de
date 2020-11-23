@@ -20,11 +20,7 @@ Ich gehe zu Hause
 http://gramatyka.de/index.html?Ich%20gehe%20zu%20Hause
 
 ## TODO:
-Load last used sentences when is empty
-
-Buttony copy paste
-
-
+Wersja uproszczona
 
 
 ## [API Foundation](https://www.apifoundation.com)

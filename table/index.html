@@ -2,6 +2,10 @@
     <input type="button" id="last" value="Last">
     <input type="button" id="copy" value="Copy">
     <input type="button" id="share" value="Share">
+    ||
+    <input type="button" id="en" value="en">
+    <input type="button" id="pl" value="pl">
+    <input type="button" id="ru" value="ru">
 </div>
 <hr>
 <div class="sentence_input">
@@ -10,13 +14,13 @@
 </div>
 
 <table>
+
     <tr class="sentence">
         <td class="first">Ich</td>
         <td>gehe</td>
         <td>zu</td>
         <td>Hause</td>
         <td class="space"></td>
-        <td></td>
     </tr>
 
     <tr class="translated">
@@ -25,37 +29,32 @@
         <td>do</td>
         <td>domu</td>
         <td class="space"></td>
-        <td>Translate to
-            <select name="translated1" id="translated1">
-                <option value="Polish">Polish</option>
-                <option value="Russian">Russian</option>
-            </select>
-        </td>
-
     </tr>
-    <tr class="translated">
 
-        <td>я</td>
-        <td>иду</td>
-        <td></td>
-        <td>домой</td>
+    <tr class="basic_form">
+        <td>Ich, Ja</td>
+        <td>Iść, gehen</td>
+        <td>zu, do</td>
+        <td>dom, Haus</td>
+        <!--        <td>praca, Arbeit die (nur Singular) praca, robota, zajęcie, zatrudnienie; körperliche/geistige Arbeit praca fizyczna/umysłowa; vergebliche Arbeit daremny trud; sich an die Arbeit machen zabierać się do pracy; Arbeit suchen szukać pracy; (PL die Arbeiten) praca, dzieło, wykonanie, wyrób</td>-->
         <td class="space"></td>
-        <td>Translate to
-            <select name="translated2" id="translated2">
-                <option value="Russian">Russian</option>
-            </select>
-        </td>
     </tr>
+    <!--    <tr class="translated">-->
+    <!--        <td>я</td>-->
+    <!--        <td>иду</td>-->
+    <!--        <td></td>-->
+    <!--        <td>домой</td>-->
+    <!--        <td class="space"></td>-->
+    <!--    </tr>-->
 
-    <tr class="partname">
+    <!--    <tr class="partname">-->
 
-        <td>pronomen</td>
-        <td>verb</td>
-        <td>przyimek</td>
-        <td>Objekt</td>
-        <td class="space"></td>
-        <td>Partname in German</td>
-    </tr>
+    <!--        <td>pronomen</td>-->
+    <!--        <td>verb</td>-->
+    <!--        <td>przyimek</td>-->
+    <!--        <td>Objekt</td>-->
+    <!--        <td class="space"></td>-->
+    <!--    </tr>-->
 
     <tr class="partname">
         <td>Zaimek osobowy</td>
@@ -63,23 +62,25 @@
         <td>przyimek</td>
         <td>rzeczownik</td>
         <td class="space"></td>
-        <td>Partname in
-            <select name="translated3" id="translated3">
-                <option value="Polish">Polish</option>
-                <!--                <option value="German">German</option>-->
-                <option value="Russian">Russian</option>
-            </select>
-        </td>
     </tr>
-
 
     <tr class="format">
 
-        <td></td>
-        <td class="first_second">
-            <h3>Odmiana VERB:</h3>
+        <td colspan="2" class="first_second">
+            Verb
+        </td>
+        <td colspan="2" class="">
+            Objekt
+        </td>
+        <td class="space"></td>
+    </tr>
+
+    <tr class="format">
+
+        <td colspan="2" class="first_second">
             <button class="active">Ich gehe</button>
             <br>
+
             <button>Du gehst</button>
             <br>
 
@@ -95,10 +96,24 @@
             <button>Sie gehen</button>
 
         </td>
-        <td></td>
-        <td></td>
+        <td colspan="2" class="">
+            <h3>Place</h3>
+            <button class="active">zu Hause</button>
+            <br>
+
+            <button class="">zu der Arbeit</button>
+            <br>
+
+            <button class="">in das Kino</button>
+            <br>
+
+            <h3>Person</h3>
+
+            <button class="">zu meiner Oma</button>
+
+        </td>
+
         <td class="space"></td>
-        <td>Another Form</td>
     </tr>
 
     <tr class="timeform">
@@ -114,49 +129,47 @@
             <button>Ich bin zu Hause gegangen.</button>
         </td>
         <td class="space"></td>
-        <td>Time</td>
     </tr>
 
-    <tr class="another">
+    <!--    <tr class="another">-->
 
-        <td class="formatted first">
-            <button class="active">Ich</button>
-            <br>
-            <button>Du</button>
-            <br>
-            <button>Er</button>
-            <button>Sie</button>
-            <button>Es</button>
-            <br>
-            <button>Wir</button>
-            <br>
-            <button>Ihr,</button>
-            <br>
+    <!--        <td class="formatted first">-->
+    <!--            <button class="active">Ich</button>-->
+    <!--            <br>-->
+    <!--            <button>Du</button>-->
+    <!--            <br>-->
+    <!--            <button>Er</button>-->
+    <!--            <button>Sie</button>-->
+    <!--            <button>Es</button>-->
+    <!--            <br>-->
+    <!--            <button>Wir</button>-->
+    <!--            <br>-->
+    <!--            <button>Ihr,</button>-->
+    <!--            <br>-->
 
-            <button>Sie</button>
-        </td>
+    <!--            <button>Sie</button>-->
+    <!--        </td>-->
 
-        <td>
-            <button>laufe</button>
-            <br>
-            <button>fahre</button>
-            <br>
-        </td>
+    <!--        <td>-->
+    <!--            <button>laufe</button>-->
+    <!--            <br>-->
+    <!--            <button>fahre</button>-->
+    <!--            <br>-->
+    <!--        </td>-->
 
-        <td>
-            <button>...</button>
-            <br>
+    <!--        <td>-->
+    <!--            <button>...</button>-->
+    <!--            <br>-->
 
-        </td>
-        <td>
-            Hausen, PL
-            Schule,
-            Schulen PL
-            ...
-        </td>
-        <td class="space"></td>
-        <td>Another Word</td>
-    </tr>
+    <!--        </td>-->
+    <!--        <td>-->
+    <!--            Hausen, PL-->
+    <!--            Schule,-->
+    <!--            Schulen PL-->
+    <!--            ...-->
+    <!--        </td>-->
+    <!--        <td class="space"></td>-->
+    <!--    </tr>-->
 
     <tr class="help_part">
 
@@ -166,25 +179,31 @@
         <td></td>
         <td></td>
         <td class="space"></td>
-        <td>Help</td>
     </tr>
 
-    <tr class="help_sentence">
+    <tr class="question">
 
-        <td colspan="4">Geographical means places that have names; eg. France, Berlin, Paris, County, etc.
-
-            Nach = To (Geographical, Compass direction) Ex. Wir gehen nach Brazil (We go to Brazil). Ex2. Wir gehen nach
-            dem Osten (We go to the east). Exceptions: Nach Hause is a German Idiom meaning "To Home". There are more
-            idioms like such.
-
-            Zu(m/r) = Too, To (Non-Geographical). Ex. Das ist zu viel (That is too much). Ex2. Kommst du zum Bau? (Are
-            you coming to the building?) Ex3. Ihr geht zu uns! (You go to us!)
-
-            Note that for Zu: Zum - Is used for masculine words. Zur - Is used for feminine words. Zu - Is used for
-            neuter words.
+        <td colspan="4">
+            Woher gehts Du?
         </td>
         <td class="space"></td>
-        <td>Help</td>
     </tr>
+
+    <!--    <tr class="help_sentence">-->
+
+    <!--        <td colspan="4">Geographical means places that have names; eg. France, Berlin, Paris, County, etc.-->
+
+    <!--            Nach = To (Geographical, Compass direction) Ex. Wir gehen nach Brazil (We go to Brazil). Ex2. Wir gehen nach-->
+    <!--            dem Osten (We go to the east). Exceptions: Nach Hause is a German Idiom meaning "To Home". There are more-->
+    <!--            idioms like such.-->
+
+    <!--            Zu(m/r) = Too, To (Non-Geographical). Ex. Das ist zu viel (That is too much). Ex2. Kommst du zum Bau? (Are-->
+    <!--            you coming to the building?) Ex3. Ihr geht zu uns! (You go to us!)-->
+
+    <!--            Note that for Zu: Zum - Is used for masculine words. Zur - Is used for feminine words. Zu - Is used for-->
+    <!--            neuter words.-->
+    <!--        </td>-->
+    <!--        <td class="space"></td>-->
+    <!--    </tr>-->
 
 </table>
