@@ -36,7 +36,7 @@ table .partname td {
 }
 
 table .format td {
-    background-color: #4c4c15;
+    /*background-color: #4c4c15;*/
     color: #fff;
     /*margin: auto auto;*/
     text-align: center;
@@ -128,4 +128,7 @@ table td.space {
 
 button {
     font-size: large;
+}
+.timeform {
+    font-size: medium;
 }
