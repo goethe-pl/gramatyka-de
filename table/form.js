@@ -1,11 +1,41 @@
+
+function CopyToClipboardFromInputElement(input) {
+    /* Select the text field */
+    input.select();
+    input.setSelectionRange(0, 99999); /*For mobile devices*/
+
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+
+    /* Alert the copied text */
+    alert("Copied the text: " + input.value);
+}
+
 // inputs = Array.from(document.querySelectorAll('button'));
 setTimeout(function () {
     // load depnds part of sentence to correct part, replace it
     console.log(sentence, params);
     document.getElementById('text').value = sentence;
 
-    // EVENTS
+    //# CLEAR
+    document.getElementById('clear').addEventListener('click', function (event) {
+        document.getElementById('text').value = "";
+    }, false)
 
+    //# Last reload
+    document.getElementById('last').addEventListener('click', function (event) {
+        // window.location.replace(window.location.pathname + window.location.search + window.location.hash);
+        window.location.replace(window.location.pathname);
+    }, false)
+
+    //# Copy to
+    document.getElementById('copy').addEventListener('click', function (event) {
+        /* Get the text field */
+        CopyToClipboardFromInputElement(document.getElementById("text"));
+
+    }, false)
+
+    // EVENTS on BUTTON'S
     document.querySelectorAll('.whole button').forEach(function (input) {
         input.addEventListener('click', function (event) {
             document.getElementById('text').value = this.innerText;

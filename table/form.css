@@ -60,10 +60,27 @@ table td.space {
 .formatted {
     font-style: italic;
 }
-.edit input {
+.edit .sentence_input {
     font-size: larger;
     width: 100%;
-    text-align: center;
+    text-align: right;
+}
+.edit .sentence_input input{
+    font-size: larger;
+}
+
+.edit .sentence_input #text {
+    width: 45%;
+    color: black;
+}
+.edit .sentence_input #clear {
+    color: darkred;
+}
+.edit .sentence_input #last {
+    color: darkblue;
+}
+.edit .sentence_input #copy {
+    color: orange;
 }
 .active {
     font-family: Lato;
