@@ -94,7 +94,7 @@ table td.space {
     text-align: left;
 }
 
-.sentence_input.more input{
+.sentence_input.more input {
     margin: auto 10px auto 10px;
 }
 
@@ -103,7 +103,7 @@ table td.space {
 }
 
 .sentence_input #text {
-    width: 84%;
+    width: 82%;
     color: black;
 }
 
@@ -129,6 +129,19 @@ table td.space {
 button {
     font-size: large;
 }
+
 .timeform {
     font-size: medium;
 }
+
+select#last_sentence_list {
+    font-size: larger;
+}
+
+#matrix, article {
+    display: block;
+}
+
+/*#matrix {*/
+/*    float: left;*/
+/*}*/

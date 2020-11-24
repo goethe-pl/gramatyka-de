@@ -10,7 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache">
 
-    <link rel="stylesheet" href="css/style.css">
+    <!--    <link rel="stylesheet" href="table/form.css">-->
+    <link rel="stylesheet" href="fonts/font.css">
+<!--    <link rel="stylesheet" href="css/style.css">-->
     <link rel="stylesheet" href="css/default.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
@@ -33,40 +35,104 @@
                 "css/fade-in.css",
                 "css/index.css",
                 "js/clipboard.js",
-                "table/form.css?3",
-                "table/form.js?1"
+                "table/form.css?5",
+                // "table/form.js?1"
+                // "fonts/font.css"
             ],
+
             "footer": [
-                "html/footer.html?3",
-                "js/domain.js?3"
-            ]
+                // "html/footer.html?3",
+                // "addons/chrome.html",
+                "addons/standalone.html"
+            ],
+
         });
     </script>
 
     <script>
-        // load sentence from param url, ?*
-        var params = window.location.search.slice(1)
-            .split('&')
-            .reduce(function _reduce(/*Object*/ a, /*String*/ b) {
-                b = b.split('=');
-                a[b[0]] = decodeURIComponent(b[1]);
-                return a;
-            }, {});
-        var sentence = Object.keys(params)[0];
-        sentence = decodeURI(sentence);
 
-        if (sentence.length < 2) {
+
+        function updateUrlFromSentenceInput() {
+            // document.getElementById('text').value = getSentenceFromUrl();
+            // var param = window.location.search;
+            var sentence = document.getElementById('text').value;
+            if (sentence.length < 2) return false;
+
+            var param = "?";
+            param += sentence;
+            // window.location.replace(window.location.pathname);
+            return window.location.replace(window.location.pathname + param);
+        }
+
+        // load sentence from param url, ?*
+        function getSentenceFromUrl() {
+            var params = window.location.search.slice(1)
+                .split('&')
+                .reduce(function _reduce(/*Object*/ a, /*String*/ b) {
+                    b = b.split('=');
+                    a[b[0]] = decodeURIComponent(b[1]);
+                    return a;
+                }, {});
+            var sentence = Object.keys(params)[0];
+            sentence = decodeURI(sentence);
+            console.log(sentence, params);
+
+            return sentence;
+        }
+
+
+        if (getSentenceFromUrl().length < 2) {
             lastSentence();
         } else {
-            editSentence();
+            // editSentence();
+            changeSentence();
+        }
+
+        function checkSentence() {
+            // article.target({
+            //     "article": [
+            //         // "table/blank.html",
+            //         "table/change.html?1",
+            //         // "table/form.css?1",
+            //         // "table/form.js?1"
+            //     ],
+            //     "#matrix": [
+            //         "table/matrix.html",
+            //         "table/sentence.js"
+            //     ]
+            // });
+            updateUrlFromSentenceInput();
+        }
+
+        function changeSentence() {
+            article.target({
+                "article": [
+                    // "table/blank.html",
+                    "table/change.html?1",
+                    // "table/form.css?1",
+                    // "table/form.js?1"
+                ],
+                "#matrix": [
+                    "table/matrix.html"
+                ],
+                "#languages": [
+                    "table/languages.html"
+                ],
+            });
         }
 
         function editSentence() {
             article.target({
                 "article": [
                     // "table/blank.html",
-                    "table/index.html?1",
+                    "table/edit.html?1",
+                    // "table/edit.js?1",
+                    // "table/form.css?1",
                     // "table/form.js?1"
+                ],
+                "#matrix": [
+                    // "table/blank.html",
+                    "table/edit.js?1",
                 ]
             });
         }
@@ -74,9 +140,15 @@
         function lastSentence() {
             article.target({
                 "article": [
-                    "table/form.html?2",
+                    "table/last.html?2",
                     // "table/form.js?2"
-                ]
+                ],
+                "#matrix": [
+                    "table/blank.html"
+                ],
+                "#languages": [
+                    "table/languages.html"
+                ],
             });
         }
 
@@ -85,13 +157,20 @@
                 "article": [
                     "table/share.html?2",
                     // "table/form.js?2"
-
-                ]
+                ],
+                "#matrix": [
+                    "table/blank.html"
+                ],
+                "#languages": [
+                    "table/blank.html"
+                ],
             });
         }
+
         function copySentence() {
             CopyToClipboardFromInputElement(document.getElementById("text"));
         }
+
 
     </script>
 
@@ -104,6 +183,11 @@
     <div class="page-header__inner">
         <div id="article"></div>
         <article></article>
+        <div id="matrix"></div>
+        <hr>
+        <div id="languages"></div>
+        <hr>
+
     </div>
 </header>
 

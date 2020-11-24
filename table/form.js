@@ -1,8 +1,9 @@
 // inputs = Array.from(document.querySelectorAll('button'));
 setTimeout(function () {
     // load depnds part of sentence to correct part, replace it
-    console.log(sentence, params);
-    document.getElementById('text').value = sentence;
+
+    // const node = document.getElementsByClassName("input")[0];
+
 
     //# CLEAR
     document.getElementById('clear').addEventListener('click', function (event) {

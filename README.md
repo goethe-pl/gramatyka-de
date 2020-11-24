@@ -20,12 +20,20 @@ Ich gehe zu Hause
 http://gramatyka.de/index.html?Ich%20gehe%20zu%20Hause
 
 ## TODO:
+Nowa Logika
+1. Ostatnio edytowane
+2. Edycja 
+3. Zmiana 
+4. Udostępnianie  
+
+## Changelog
 Wersja uproszczona
+
 
 ## Changes
 
 ### first view
-![chrome_2020-11-23_14-16-03.png](docs/chrome_2020-11-23_14-16-03.png)
+![chrome_2020-11-23_14-16-03.png](docs/chrome_2020-11-23.png)
 ### view with 2 pages, front
 ![chrome_2020-11-23_21-35-35.png](docs/chrome_2020-11-23_21-35-35.png)
 ### view with 2 pages, back
@@ -50,3 +58,38 @@ Obecnie istnieje kilka narzędzi od planowania po uruchamianie i utrzymanie opro
 + [APIbuild - build process definition, focused on quality, versioning](https://www.apibuild.com)
 + [APIsql - bazy danych, zapytania, modele](https://www.apisql.com)
 + [APIfunc - rozwiązania dla FaaS](https://www.apifunc.com)
+
+
+## Competitors
+
+https://github.com/langpress.com-org/
+
+
+## Pricing
+
++ Is for free for everyone
++ If you want support us
++ If you are doing education proffesionaly and you need this kind of tool provide to your company
+
+
+## What we can do:
+
+Benefits for your customers:
+
+What values we are bringing to your business:
+
+## sponsors
+
+
+## Solutions
+Licznik zuzycia chmury, procesora i koszt
+
+Plan, który uzywamy
+
+## more info
+
+About AI
+[SZTUCZNA INTELIGENCJA NON-FICTION | Fundacja Panoptykon](https://panoptykon.org/sztuczna-inteligencja-non-fiction)
+
+
+
