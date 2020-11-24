@@ -6,9 +6,9 @@ setTimeout(function () {
 
 
     //# CLEAR
-    document.getElementById('clear').addEventListener('click', function (event) {
-        document.getElementById('text').value = "";
-    }, false)
+    // document.getElementById('clear').addEventListener('click', function (event) {
+    //     document.getElementById('text').value = "";
+    // }, false)
 
     // //# Last reload
     // document.getElementById('last').addEventListener('click', function (event) {

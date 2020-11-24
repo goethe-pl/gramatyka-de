@@ -34,12 +34,37 @@
             "head": [
                 "css/fade-in.css",
                 "css/index.css",
-                "js/clipboard.js",
+                "table/clipboard.js",
                 "table/form.css?5",
                 // "table/form.js?1"
                 // "fonts/font.css"
-            ],
+                "sentence/updateUrlFromSentenceInput.js",
+                "sentence/getSentenceFromUrl.js",
+                "sentence/edit.js",
+                "sentence/next_sentence.js",
+                "sentence/prev_sentence.js",
 
+                "menu/changeSentence.js",
+                "menu/checkSentence.js",
+                "menu/copySentence.js",
+                "menu/editSentence.js",
+                "menu/lastSentence.js",
+                "menu/shareSentence.js",
+
+                "menu/index.js",
+                "sentence/edit.js",
+
+            ],
+            "article": [
+                // "table/blank.html",
+                "table/change.html?1",
+                // "table/form.css?1",
+            ],
+            // "#matrix": [
+            //     "table/matrix.html",
+            //     "table/form.js?1",
+            //     "sentence/edit.js?1"
+            // ],
             "footer": [
                 // "html/footer.html?3",
                 // "addons/chrome.html",
@@ -50,126 +75,6 @@
     </script>
 
     <script>
-
-
-        function updateUrlFromSentenceInput() {
-            // document.getElementById('text').value = getSentenceFromUrl();
-            // var param = window.location.search;
-            var sentence = document.getElementById('text').value;
-            if (sentence.length < 2) return false;
-
-            var param = "?";
-            param += sentence;
-            // window.location.replace(window.location.pathname);
-            return window.location.replace(window.location.pathname + param);
-        }
-
-        // load sentence from param url, ?*
-        function getSentenceFromUrl() {
-            var params = window.location.search.slice(1)
-                .split('&')
-                .reduce(function _reduce(/*Object*/ a, /*String*/ b) {
-                    b = b.split('=');
-                    a[b[0]] = decodeURIComponent(b[1]);
-                    return a;
-                }, {});
-            var sentence = Object.keys(params)[0];
-            sentence = decodeURI(sentence);
-            console.log(sentence, params);
-
-            return sentence;
-        }
-
-
-        if (getSentenceFromUrl().length < 2) {
-            lastSentence();
-        } else {
-            // editSentence();
-            changeSentence();
-        }
-
-        function checkSentence() {
-            // article.target({
-            //     "article": [
-            //         // "table/blank.html",
-            //         "table/change.html?1",
-            //         // "table/form.css?1",
-            //         // "table/form.js?1"
-            //     ],
-            //     "#matrix": [
-            //         "table/matrix.html",
-            //         "table/sentence.js"
-            //     ]
-            // });
-            updateUrlFromSentenceInput();
-        }
-
-        function changeSentence() {
-            article.target({
-                "article": [
-                    // "table/blank.html",
-                    "table/change.html?1",
-                    // "table/form.css?1",
-                    // "table/form.js?1"
-                ],
-                "#matrix": [
-                    "table/matrix.html"
-                ],
-                "#languages": [
-                    "table/languages.html"
-                ],
-            });
-        }
-
-        function editSentence() {
-            article.target({
-                "article": [
-                    // "table/blank.html",
-                    "table/edit.html?1",
-                    // "table/edit.js?1",
-                    // "table/form.css?1",
-                    // "table/form.js?1"
-                ],
-                "#matrix": [
-                    // "table/blank.html",
-                    "table/edit.js?1",
-                ]
-            });
-        }
-
-        function lastSentence() {
-            article.target({
-                "article": [
-                    "table/last.html?2",
-                    // "table/form.js?2"
-                ],
-                "#matrix": [
-                    "table/blank.html"
-                ],
-                "#languages": [
-                    "table/languages.html"
-                ],
-            });
-        }
-
-        function shareSentence() {
-            article.target({
-                "article": [
-                    "table/share.html?2",
-                    // "table/form.js?2"
-                ],
-                "#matrix": [
-                    "table/blank.html"
-                ],
-                "#languages": [
-                    "table/blank.html"
-                ],
-            });
-        }
-
-        function copySentence() {
-            CopyToClipboardFromInputElement(document.getElementById("text"));
-        }
 
 
     </script>
